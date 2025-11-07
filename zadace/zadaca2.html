@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Magdalena Jurkić">
+    <title>Zadaća 2</title>
+</head>
+<body>
+    <h2>Omiljena serija</h2>
+    <h3>Bridgerton</h3>
+    <table border="1">
+        <tr>
+            <th colspan="5">Bridgerton</th>
+
+        </tr>
+        <tr>
+            <th>Sezona</th>
+            <th>Godina emitiranja</th>
+            <th>Broj epizoda</th>
+            <th>Glavni fokus/ljubavna priča</th>
+            <th>Napomena</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2020.</td>
+            <td rowspan="2">8</td>
+            <td>Daphne Bridgerton & Simon Basset (vojvoda od Hastingsa)</td>
+            <td>Prva sezona upoznaje publiku s obitelji Bridgerton i društvom londonske sezone.</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>2022.</td>
+            <td>Anthony Bridgerton & Kate Sharma</td>
+            <td>Sezona fokusirana na najstarijeg brata Anthonyja i njegovu borbu između dužnosti i ljubavi.</td>
+        </tr>
+        <tr>
+            <td>3 (dio 1)</td>
+            <td>2024</td>
+            <td rowspan="2">4</td>
+            <td>Colin Bridgerton & Penelope Featherington</td>
+            <td>Prvi dio sezone u kojem Penelope pokušava ostaviti prošlost iza sebe.</td>
+        </tr>
+        <tr>
+            <td>3 (dio 2)</td>
+            <td>2024</td>
+            <td>Colin Bridgerton & Penelope Featherington</td>
+            <td>Zaključak njihove ljubavne priče i razotkrivanje Lady Whistledown.</td>
+        </tr>
+    </table>
+
+    <h2>Obrazac</h2>
+     <form action="#" method="get">
+        <label for="ime">Unesi ime</label>
+        <input type="text" id="ime" placeholder="Unesi ime...">
+        <br>
+        <br>
+        <label for="ime">Unesi prezime</label>
+        <input type="text" id="ime" placeholder="Unesi prezime...">
+        <br>
+        <br>
+        <label for="pass">Unesi lozinku</label>
+        <input type="password" name="pass" id="pass" required>
+
+        <p>Odaberi račun:</p>
+        <input type="radio" id="admin" name="odaberi račun" value="Admin">
+        <label for="admin">Admin</label><br>
+        <input type="radio" name="guest" id="odaberi račun" value="Guest">
+        <label for="radio">Guest</label><br>
+        <br>
+        <p>Potvrdom prihvaćam uvjete korištenja</p>
+         <input type="checkbox" name="uvjet" id="uvjet">
+        <label for="uvjet">Prihvaćam</label> <br>
+        <br>
+        <input type="submit" value="Pošalji">
+        <input type="reset" value="Poništi">
+        <br>
+    <h2>AUDIO</h2>
+   <audio controls>
+  <source src="../Audio_video/test-audio.ogg" type="audio/ogg">
+  Your browser does not support the audio element.
+</audio>
+<br>
+<h2>VIDEO </h2>
+<video src="../Audio_video/puppy.mp4" type="video/mp4">
+</video>
+
+
+
+    
+
+
+    
+</body>
+</html>
