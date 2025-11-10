@@ -3,7 +3,17 @@ h2 {
     color: blueviolet;  
     background-color: blanchedalmond;    
     }    
-bod {
+body {
 
     background-color: cornsilk;    
     }
+
+    /*pristup preko ID-a*/
+#prvi {
+    color: aqua;
+}
+/*pristup preko klase*/
+.drugi {
+    color: chocolate;
+
+}
