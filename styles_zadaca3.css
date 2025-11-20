@@ -40,6 +40,12 @@ p:nth-of-type(3) {
 }
 
 /* Klasa highlight – zadatak 5 */
-.highlight {
-    color: #FFC107;
+p.highlight {
+    color: #FFC107; /* sada specifičnost pobjeđuje p:nth-of-type(1) */
 }
+
+/* Treći paragraf - internal CSS (Zadatak 7) */
+#paragraf3 {
+    background-color: rgb(220, 235, 255);
+}
+
