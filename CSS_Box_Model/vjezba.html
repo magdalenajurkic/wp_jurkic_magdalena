@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model vježba</title>
+    <style>
+        h1, body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div {
+            width: 450px;
+            height: 450px;
+        }
+        .prvi {
+           background-color: aquamarine;
+           border: 4px solid black;
+           border-top: 8px solid black;
+           /* padding: 30px 15px 30px 15px; */
+           /* gore desno dolje lijevo */
+          /*  padding: 30px 15px; */
+         /*  gore i dolje pa desno i lijevo */
+         padding: 50px;
+         margin-bottom: 30px;
+        }
+        .drugi {
+            background-color: blueviolet;
+            border: 3px dashed black;
+           /*  border-radius: 50%; */
+           border-top-right-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Box model</h1>
+    <div class="prvi">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime ex velit dolorum fuga,
+        voluptatem nam? Animi, quibusdam eaque dicta odio, sapiente suscipit officiis commodi eveniet,
+         in illo magnam. Mollitia, totam.</p>
+    </div>
+    <div class="drugi">
+        <p>Ovo je drugi div element.</p>
+    </div>
+</body>
+</html>
