@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>2. kolokvij</title>
+
+    <!-- INTERNAL CSS -->
+    <style>
+        /* -------------------------------
+           1. ZASTAVA BELGIJE
+        --------------------------------*/
+        .belgium-flag {
+            width: 300px;
+            height: 200px;
+            display: flex;
+            margin-bottom: 30px;
+        }
+
+        .black {
+            background-color: black;
+            flex: 1;
+        }
+
+        .yellow {
+            background-color: yellow;
+            flex: 1;
+        }
+
+        .red {
+            background-color: red;
+            flex: 1;
+        }
+
+        /* -------------------------------
+           2. CSS GRID 4x4
+        --------------------------------*/
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 100px);
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .grid-item {
+            background-color: lightgray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        /* -------------------------------
+           3. BOX MODEL
+        --------------------------------*/
+        .box {
+            border: 1px solid black;
+            padding: 15px;
+            margin: 10px;
+            background-color: #f2f2f2;
+        }
+
+        /* -------------------------------
+           4. KLASA I ID
+        --------------------------------*/
+        .klasa1 {
+            color: blue;
+            margin: 10px;
+        }
+
+        .klasa2 {
+            color: green;
+            padding: 10px;
+        }
+
+        .klasa3 {
+            color: purple;
+            font-style: italic;
+        }
+
+        #paragraf1 {
+            color: red;
+            font-weight: bold;
+        }
+
+        #paragraf2 {
+            color: orange;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>1. Zastava Belgije</h2>
+    <div class="belgium-flag">
+        <div class="black"></div>
+        <div class="yellow"></div>
+        <div class="red"></div>
+    </div>
+
+    <h2>2. CSS Grid</h2>
+    <div class="grid-container">
+        <div class="grid-item">Grid 1</div>
+        <div class="grid-item">Grid 2</div>
+        <div class="grid-item">Grid 3</div>
+        <div class="grid-item">Grid 4</div>
+        <div class="grid-item">Grid 5</div>
+        <div class="grid-item">Grid 6</div>
+        <div class="grid-item">Grid 7</div>
+        <div class="grid-item">Grid 8</div>
+        <div class="grid-item">Grid 9</div>
+        <div class="grid-item">Grid 10</div>
+        <div class="grid-item">Grid 11</div>
+        <div class="grid-item">Grid 12</div>
+        <div class="grid-item">Grid 13</div>
+        <div class="grid-item">Grid 14</div>
+        <div class="grid-item">Grid 15</div>
+        <div class="grid-item">Grid 16</div>
+    </div>
+
+    <h2>3. Box model</h2>
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+    <div class="box">Box 4</div>
+
+    <h2>4. Klase i ID</h2>
+    <p class="klasa1">Paragraf s klasom 1</p>
+    <p class="klasa2">Paragraf s klasom 2</p>
+    <p class="klasa3">Paragraf s klasom 3</p>
+    <p id="paragraf1">Paragraf s ID-om 1</p>
+    <p id="paragraf2">Paragraf s ID-om 2</p>
+
+    <!-- JS -->
+    <script src="./index.js"></script>
+</body>
+</html>
