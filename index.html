@@ -9,127 +9,188 @@
     <title>Moja web stranica</title>
 </head>
 <body>
-<h1>Zadaće</h1>
-<ul>
-    <li><a href="./zadace/zadaca1.html">1. zadaća </a></li> 
-    <li><a href="./zadace/zadaca2.html">2. zadaća </a></li>
-    <li><a href="./zadace/zadaca3.html">3. zadaća </a></li>
-    <li><a href="./zadace/zadaca4.html">4. zadaća</a></li>
-    <li><a href="./zadace/zadaca5.html">5. zadaća</a></li>
-    <li>6.zadaća</li>
+
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>Magdalena Jurkić</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+    font-family: 'Inter', sans-serif;
+    background-color: #faf7f4;
+    color: #4a3f39;
+}
+
+.navbar {
+    background-color: #f3ede7;
+}
+
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+}
+
+.nav-link {
+    color: #4a3f39 !important;
+    font-weight: 400;
+}
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(to bottom, #faf7f4, #f0e8df);
+    display: flex;
+    align-items: center;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.2rem;
+    margin-top: 20px;
+}
+
+.hero p {
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+.section {
+    padding: 90px 0;
+}
+
+.section.soft {
+    background-color: #f6efe9;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.about-text {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+.interests div {
+    padding: 15px 0;
+    font-size: 0.95rem;
+}
+
+.profile-img {
+    width: 210px;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid #ffffff;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+}
+
+.nude-btn {
+    background-color: #bfa89a;
+    color: white;
+    padding: 14px 36px;
+    border-radius: 40px;
+    border: none;
+    font-size: 0.9rem;
+}
+
+.nude-btn:hover {
+    background-color: #a99284;
+}
+
+.footer {
+    background-color: #f3ede7;
+    text-align: center;
+    padding: 25px;
+    font-size: 0.85rem;
+}
+
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">Magdalena</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">O meni</a></li>
+                <li class="nav-item"><a class="nav-link" href="#interests">Interesi</a></li>
+                <li class="nav-item"><a class="nav-link" href="#assignments">Zadaće</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="hero">
+    <div class="container text-center">
+        <img src="./slike/profil.jpg.jpg" alt="Magdalena Jurkić" class="profile-img">
+        <h1>Magdalena Jurkić</h1>
+        <p>Studentica Učiteljskog fakulteta u Slavonskom Brodu</p>
+    </div>
+</header>
+
+<section id="about" class="section">
+    <div class="container">
+        <h2 class="section-title">O meni</h2>
+        <p class="text-center about-text">
+            Zovem se Magdalena Jurkić, imam 21 godinu i studiram na Učiteljskom fakultetu u Slavonskom Brodu.
+            Volim estetiku, kreativnost i istraživanje stvari u kojima mogu rasti i izražavati se.
+        </p>
+    </div>
+</section>
+
+<section id="interests" class="section soft">
+    <div class="container">
+        <h2 class="section-title">Interesi & hobiji</h2>
+        <div class="row text-center interests">
+            <div class="col-md-4">☕ Kave i druženja</div>
+            <div class="col-md-4">💅 Rad s noktima</div>
+            <div class="col-md-4">🎬 Filmovi & glazba</div>
+            <div class="col-md-4">🎨 Crtanje</div>
+            <div class="col-md-4">📚 Čitanje</div>
+            <div class="col-md-4">✈️ Putovanja & moda</div>
+        </div>
+    </div>
+</section>
+
+<section id="assignments" class="section">
+    <div class="container text-center">
+        <h2 class="section-title">Zadaće</h2>
+        <a href="./zadace/zadaca1.html" class="btn nude-btn">1. zadaća</a>
+        <a href="./zadace/zadaca2.html" class="btn nude-btn">2. zadaća</a>
+        <a href="./zadace/zadaca3.html" class="btn nude-btn">3. zadaća</a>
+        <a href="./zadace/zadaca4.html" class="btn nude-btn">4. zadaća</a>
+        <a href="./zadace/zadaca5.html" class="btn nude-btn">5. zadaća</a>
+        <a href="./zadace/zadaca6.html" class="btn nude-btn">6. zadaća</a>
+    </div>
+</section>
+
+<footer class="footer">
+    <p>© 2026 Magdalena Jurkić</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
 
 
-
-</ul>
-<h1>Naslov 1</h1>  
-<h2>Naslov 2</h2>  
-<h3>Naslov 3</h3>
-<h4>Naslov 4</h4>
-<h5>Naslov 5</h5>
-<h6>Naslov 6</h6>
-<p>Kad je saznala da će <strong>dobiti sestru</strong>, <br> jedanaestogodišnja Gabriela <em>bila je iznenađena,</em> 
-  no ubrzo je mala <mark>postala središte njezina svijeta.</mark> 
-  Danas su obje uspješne plesačice koje, unatoč razlici u godinama i kilometrima između njih,
-  dijele istu <del>strast</del>, podršku i  <sub>neraskidivu</sub> <sup>sestrinsku</sup> vezu.</p>
-
-<hr>
-<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis ipsam aliquid maxime quaerat.
-   Quisquam, iusto voluptate distinctio nostrum voluptates corporis enim soluta ullam facilis at ducimus debitis officia eum dolorem.</p>
-   <h3>Unoredered lista</h3>
-   <ul>
-    <li>2 jaja </li>
-    <li>brašno</li>
-    <li>ulje</li>
-    <li>mlijeko</li>
-   </ul>
-   <h3>Ordered lista</h3>
-   <ol type="a">
-    <li>Razbiti jaja.</li>
-    <li>Dodati ulje.</li>
-    <li>Dodavati brašno.</li>
-    <li>Dodati mlijeko.</li>
-   </ol>
-   <h3>Definition lista</h3>
-   <dl>
-    <dt>Napon</dt>
-    <dd>razlika potencijala između dvije točke</dd>
-    <dt>Struja</dt>
-    <dd>usmjereno gibanje elektrona kroz vodič.</dd>
-   </dl>
-
-
-   <h1>Mileram torta</h1>
-
-   <h2>Sastojci</h2>
-  <h3>Tijesto</h3>
-   <ul>
-    <li>25 dag glatkog brašna</li>
-    <li>10 dag šećera</li>
-    <li>1 prašak za pecivo</li>
-    <li>1 vanilin šečer</li>
-    <li>8 dag maslaca</li>
-    <li>1 jaje</li>
-   </ul>
-
-   <h3>Fil</h3>
-   <ul>
-    <li>1/2 l mlijeka</li>
-    <li>2 vrećice pudinga od vanilije</li>
-    <li>20 dag šećera</li>
-    <li>80 dag milerama</li>
-    <li>voće</li>
-    <li>preljev za tortu</li>
-   </ul>
-
-   <h2>Priprema</h2>
-   <ol>
-    <li>Od navedenih sastojaka zamijesiti prhko tijesto i ostaviti u hladnjaku oko 45 minuta.Tada ga razvaljati i staviti na dno i stijenke okruglog kalupa,
-         prethodno namazanog margarinom i posutog brašnom. </li>
-    <li>U mlijeku skuhati puding i šećer, skinuti s vatre i u vrelo istresti mileram. Odmah sipati u kalup, preko fila staviti voće po želji</li>
-    <li>Peći 70 minuta u pećnici zagrijanoj na 170 stupnjeva.Dobro ohladiti, najbolje preko noći i tada preliti preljevom za torte.</li>
-    <li>Kada tortu izvadite iz pećnice fil će se “tresti” i “mrdati”.Neka vas to ne brine, stegnut će se hladeći.</li>
-   </ol>
-
-
-   <h3>Linkovi</h3>
-   <p>Web stranicu sveučilišta možete vidjeti <a href="https://www.unisb.hr/" target="_blank">ovdje.</a></p>
-  <!--  Target blank otvara u novoj kartici. -->
-    <p>Otvori link <a href="./linkovi/kontakt.html" target="_blank">kontakt</a></p>
-
-<h3>Dodavanje slika</h3>
-<p>Slika sveučilišta</p>
-<img src="https://www.unisb.hr/wp-content/uploads/design/logo_s_f.png" alt="slika sveučilišta">
-<p>Slika iz našeg foldera</p>
-<img src="./slike/logo_s_f.png" alt="slika sveučilišta" width="550px">
-
-<h3>Mojih top pet filmova</h3>
-<ol>
-    <li><a href="https://www.imdb.com/title/tt11252248/" target="_blank">Dog</a></li>
-
-    <li><a href="https://www.imdb.com/title/tt2709768/?ref_=nv_sr_srsg_0_tt_4_nm_4_in_0_q_the%2520secret%2520life%2520of%2520p" target="_blank">The Secret Life of Pets</a></li>
-
-    <li><a href="https://www.imdb.com/title/tt26047818/?ref_=nv_sr_srsg_2_tt_6_nm_0_in_0_q_samo%2520ne%2520" target="_blank">Samo ne ti</a></li>
-
-    <li><a href="https://www.imdb.com/title/tt0120338/?ref_=fn_all_ttl_1" target="_blank">Titanic</a></li>
-    <li><a href="https://www.imdb.com/title/tt2674426/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_me%2520be" target="_blank">Me Before You</a></li>
-
-</ol>
-    
-<h1>Moj rođendan!</h1>
-<h3>15.05.</h3>
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS154PeK0HJCaNzXjORRq1VRqicxR48sice9w&s" alt="slika torte">
-<h3>Sa sobom trebaš ponijeti:</h3>
-<ul>
-    <li>dobru volju</li>
-    <li>osmijeh</li>
-    <li>veselje</li>
-</ul>
-<h3>Lokacija održavanja slavlja:</h3>
-<a href="https://share.google/owGrAWoXc5ML4I1XZ">link do karte</a>
-
-
-
-<script src="./index.js"></script>
 </body>
 </html>
 

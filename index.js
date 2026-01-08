@@ -37,3 +37,5 @@ BMI = masa (kg)/(visina*visina) (m)
 let visina = prompt("Unesi svoju visinu u m: ");
 let bmi = Math.round (masa/(visina*visina));
 alert("Vaš BMI indeks iznosi: "+ bmi); */
+
+
